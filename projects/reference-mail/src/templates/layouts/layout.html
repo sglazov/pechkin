@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="format-detection" content="telephone=no" />
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      @-ms-viewport {
+        width: device-width;
+      }
+
+      a[x-apple-data-detectors=true] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      body {
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        a       {color: #4B35FB; text-decoration: underline;}
+        table   { border-collapse: collapse; }
+      </style>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="webkit">
+      <table class="layout" width="100%" cellpadding="0" align="center">
+        <tr>
+          <td class="main">
+            <table class="wrapper" width="600" align="center">
+            {% block preheader %}
+              <tr>
+                <td class="preheader">
+                  <p>
+                    {% if preheader %}
+                      {{ preheader }}
+                    {% else %}
+                      Прехедер нового письма: название сервиса или компании
+                    {% endif %}
+                  </p>
+                </td>
+              </tr>
+            {% endblock %}
+              <tr>
+                <td class="content">
+                  <div class="column">
+                    <table>
+                      <tr>
+                        <td class="cell">
+                          {% block content %}{% endblock %}
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+
+              {# begin footer #}
+              <tr>
+                <td class="footer">
+                  <p>Вы получили это письмо, потому что являетесь зарегистрированным клиентом и согласились получать почтовые уведомления. Везёт вам.</p>
+                  <p>Если вы не хотите получать такие письма от нас, то <a href="[unsub]">отключите рассылку в настройках профиля</a>.</p>
+                </td>
+              </tr>
+              {# end footer #}
+              <!-- end footer -->
+
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
