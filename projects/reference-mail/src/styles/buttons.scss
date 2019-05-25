@@ -1,0 +1,24 @@
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: none;
+  font-family: $font-family;
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-size: $font-size;
+  line-height: $font-size;
+  line-height: 26px;
+  font-weight: 500;
+  min-width: 60px;
+  text-align: center;
+  // text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+  &__box {
+    border-radius: 4px;
+  }
+
+  &__wrap {
+    Margin: 0 0 1em 0;
+  }
+}

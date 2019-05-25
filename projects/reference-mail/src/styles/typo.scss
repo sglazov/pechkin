@@ -1,0 +1,78 @@
+
+a {
+  color: $brand-color !important;
+  text-decoration: none;
+  border-bottom: lighten($brand-color, 15%) 1px solid;
+}
+a span {
+  color: $brand-color;
+}
+a img {
+  border: 0;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+}
+table {
+  border-collapse: collapse;
+  mso-table-lspace: 0;
+  mso-table-rspace: 0;
+}
+td {
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  Margin: .5em 0;
+  color: $color;
+  display: block;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: normal;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 42px
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+p {
+  Margin: 1em 0;
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: normal;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+}
+
+ul,
+ol {
+  Margin: 1em 0 1.5em 0;
+
+  li {
+    Margin: .5em 0;
+    color: $color;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: normal;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+  }
+}
