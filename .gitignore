@@ -16,4 +16,4 @@ npm-debug.log
 ftp.config.js
 *.log
 
-*/src/templates/pages/*.css
+src/templates/pages/*.css
