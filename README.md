@@ -3,25 +3,25 @@
 
 ## С чего начать?
 1. Склонировать репозиторий в папку `new-mails`, перейти в созданную папку проекта, удалить скрытую папку `.git`:
-```bash
-git clone https://github.com/4enki/pechkin.git new-mails && cd $_ && rm -rf ./.git
-```
+    ```shell
+    git clone https://github.com/4enki/pechkin.git new-mails && cd $_ && rm -rf ./.git
+    ```
 
 1. Перед первым запуском нужно установить зависимости (_быстрее через [Yarn](https://yarnpkg.com); один раз на проект_):
-```bash
-npm/yarn install
-```
+    ```shell
+    npm/yarn install
+    ```
 
 1. Перейти в дирректорию эталонного письма и запустить сборку с вотчером:
-```bash
-gulp
-```
+    ```shell
+    gulp
+    ```
 
 ## Как всё устроено
 В корне «Печкина» есть директория `projects` в которой находятся отдельные проекты каждого письма/рассылки. Пример можно смотреть в `projects/reference-mail`. Внутри отдельного проекта должен быть файл `gulpfile.js`.
 
 Запуск сборки с вотчером происходит по команде:
-```bash
+```shell
 gulp
 ```
 
