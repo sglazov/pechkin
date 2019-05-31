@@ -47,21 +47,51 @@ gulp
 ## Структура папок и файлов
 ```
 ├── gulpfile.js/                      # Конфиг Gulp.js
-│   ├── tasks/                        # Отдельные файлы с задачами
+│   ├── tasks/                        # Gulp-такси
+│   │   ├── server.js                 # Таск browser-sync
+│   │   ├── styles.js                 # Таск сборки стилей из SCSS для инлайна
+│   │   ├── template.js               # Таск шаблонизации: nunjucks, markdown, inline-css
+│   │   └── watch.js                  # Бдительные вотчеры изменений
 │   ├── utils/                        # Помогаторы
 │   ├── paths.js                      # Пути к ресурсам проекта
+│   ├── config.js                     # Конфиг gulp-сборки: путь, структура и т.п.
 │   └── index.js                      # Основные задачи
-├── projects/                         #
-│   └── reference-mail/               #
-├── resources/                        #
-│   ├── data/                         #
-│   └── design/                       #
+├── projects                          # Отдельные проекты писем, рассылки и проч.
+│   └── reference-mail                # Пример эталонного письма и стуктуры сборки
+│       ├── README.md                 # Пример файла-документации
+│       ├── dist                      # Готовое письмо (автогенерация)
+│       ├── gulpfile.js               # Стартовый gulp-файлы отдельного письма
+│       └── src                       # Исходники проекта
+│           ├── images                # Графика
+│           ├── styles                # Стили
+│           │   ├── buttons.scss      #
+│           │   ├── content.scss      #
+│           │   ├── layout.scss       #
+│           │   ├── style.scss        #
+│           │   ├── typo.scss         #
+│           │   └── variables.scss    #
+│           └── templates             # Шаблоны HTML-разметки писем
+│               ├── components        # Отдельные части
+│               ├── layouts           # Лэйаут
+│               ├── pages             # Отдельные страницы
+│               └── utils             # Набор снипетов-помощников
+├── resources/                        # Файлы для работы: макеты, данные и проч.
 ├── .editorconfig                     # Конфигурационный файл IDE
 ├── .gitignore                        # Список исключённых файлов из Git
 ├── package.json                      # Файл-конфиг «Печкина»: пакеты, скприты, выходные данные
-└── README.md                         # Документация проекта (вы сейчас здесь, кстати)
+├── CHANGELOG.md                      # Летопись версий
+└── README.md                         # Документация «Печкина» (вы сейчас здесь, кстати)
 ```
 
 ## ⚗️ В тему
-
-## Спасибы
+* http://emailframe.work/
+* https://litmus.com/resources/free-responsive-email-templates ★
+* https://www.campaignmonitor.com/email-templates/
+* https://foundation.zurb.com/emails.html
+* https://mjml.io/ ★
+* https://tedgoas.github.io/Cerberus/
+* https://github.com/mailchimp/email-blueprints
+* https://github.com/InterNations/antwort
+* https://www.muicss.com/docs/v1/email/boilerplate-html
+* Поддерживаемые CSS-свойства в разных почтовых клиентах: https://www.campaignmonitor.com/css/
+* https://github.com/dudeonthehorse/kilogram ★ — к сожалению, не поддерживается автором
