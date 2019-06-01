@@ -17,4 +17,7 @@ gulp.task('watch', function() {
   watch(config.watch.styles, function() {
     return runSequence('styles', 'template', reload);
   });
+  watch(config.watch.images, function() {
+    return runSequence('images', reload);
+  });
 });

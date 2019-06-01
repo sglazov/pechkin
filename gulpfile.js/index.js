@@ -18,6 +18,7 @@ require('require-dir')('./tasks', {recurse: true});
   // Запуск живой сборки
   gulp.task('default', function(cb) {
     return runSequence(
+      'images',
       'styles',
       'template',
       'server',

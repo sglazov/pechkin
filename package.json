@@ -22,6 +22,8 @@
   "devDependencies": {
     "browser-sync": "^2.26.5",
     "gulp": "3.9.1",
+    "gulp-changed": "^4.0.0",
+    "gulp-imagemin": "^6.0.0",
     "gulp-inline-css": "^3.3.1",
     "gulp-notify": "^3.2.0",
     "gulp-nunjucks-render": "^2.2.3",
@@ -29,6 +31,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "^1.0.9",
     "gulp-watch": "^5.0.1",
+    "imagemin-pngquant": "^8.0.0",
     "marked": "^0.6.2",
     "nunjucks-markdown": "^2.0.1",
     "portfinder": "^1.0.20",
