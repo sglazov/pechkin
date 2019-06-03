@@ -1,7 +1,7 @@
 # 📮 «Печкин»
 «Печкин» помогает быстро начать вёрстку писем
 
-**Живой пример демо-письма**: http://4enki.github.io/pechkin/reference-mail
+**Живой пример демо-письма**: https://4enki.github.io/pechkin/reference-mail/
 
 <details>
   <summary>Скрин демо-письма</summary>
