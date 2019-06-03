@@ -5,7 +5,10 @@
 
 <details>
   <summary>Скрин демо-письма</summary>
-  ![Скриншот эталонного демо-письма проекта «Печкин» для быстрого старта вёрстки писем](./.github/pechkin-reference-mail-demo.png)
+  <img 
+    src=".github/pechkin-reference-mail-demo.png"
+    alt="Скриншот эталонного демо-письма проекта «Печкин» для быстрого старта вёрстки писем"
+  >
 </details>
 
 ## С чего начать?
