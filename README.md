@@ -5,7 +5,7 @@
 
 <details>
   <summary>Скрин демо-письма</summary>
-  <img 
+  <img
     src=".github/pechkin-reference-mail-demo.png"
     alt="Скриншот эталонного демо-письма проекта «Печкин» для быстрого старта вёрстки писем"
   >
@@ -91,3 +91,5 @@ gulp
 * https://www.muicss.com/docs/v1/email/boilerplate-html
 * Поддерживаемые CSS-свойства в разных почтовых клиентах: https://www.campaignmonitor.com/css/
 * https://github.com/dudeonthehorse/kilogram ★ — к сожалению, не поддерживается автором
+* https://github.com/dudeonthehorse/normalize.email.css
+* https://github.com/dudeonthehorse/kilogram.css
