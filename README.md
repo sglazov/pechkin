@@ -93,3 +93,8 @@ gulp
 * https://github.com/dudeonthehorse/kilogram ★ — к сожалению, не поддерживается автором
 * https://github.com/dudeonthehorse/normalize.email.css
 * https://github.com/dudeonthehorse/kilogram.css
+* https://templates.mailchimp.com/development/css/client-specific-styles/
+* https://templates.mailchimp.com/resources/email-client-css-support/
+* https://caniuse.email/ ★
+* https://code.market/product/amp-ready-email-template-premium-bundle/
+* 🇷🇺 https://vc.ru/design/75639-kak-pravilno-verstat-pisma-rekomendacii-i-trebovaniya-dlya-verstalshchika
