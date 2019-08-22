@@ -1,6 +1,7 @@
 const gulp           = require('gulp');
 const plumber        = require('gulp-plumber');
 const nunjucksRender = require('gulp-nunjucks-render');
+const frontMatter    = require('gulp-front-matter');
 const markdown       = require('nunjucks-markdown');
 const marked         = require('marked');
 const inlineCss      = require('gulp-inline-css');
@@ -16,6 +17,7 @@ const nunjucksMarkdown = function(env) {
 gulp.task('template', function() {
   return gulp.src(config.source.templates)
     .pipe(plumber({ errorHandler: config.errorHandler }))
+    .pipe(frontMatter({ property: 'data' }))
     .pipe(nunjucksRender({
       path:     'src/templates',
       manageEnv: nunjucksMarkdown
