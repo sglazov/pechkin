@@ -30,6 +30,13 @@ Gulp-сборщик «Печкин» помогает быстро начать 
     gulp
     ```
 
+<a href="https://promopult.ru/promopult/career/?utm_source=pechkin">
+  <img src=".github/promopult-logo.svg"
+       alt="Развиваю «Печкин» при поддержке компании PromoPult"
+       width="240"
+       height="34">
+</a>
+
 ## Как всё устроено
 В корне «Печкина» есть директория `projects` в которой находятся отдельные проекты каждого письма/рассылки. Пример можно смотреть в `projects/reference-mail`. Внутри отдельного проекта должен быть файл `gulpfile.js`.
 
@@ -80,6 +87,7 @@ gulp
 ```
 
 ## ⚗️ В тему
+* https://www.caniemail.com/ ★
 * http://emailframe.work/
 * https://litmus.com/resources/free-responsive-email-templates ★
 * https://www.campaignmonitor.com/email-templates/
@@ -98,6 +106,3 @@ gulp
 * https://caniuse.email/ ★
 * https://code.market/product/amp-ready-email-template-premium-bundle/
 * 🇷🇺 https://vc.ru/design/75639-kak-pravilno-verstat-pisma-rekomendacii-i-trebovaniya-dlya-verstalshchika
-
-## Спасибо
-Проект развивается при поддержке компании [PromoPult](https://promopult.ru/promopult/career).
