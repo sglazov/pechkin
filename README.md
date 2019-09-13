@@ -30,7 +30,7 @@ Gulp-сборщик «Печкин» помогает быстро начать 
     gulp
     ```
 
-<a href="https://promopult.ru/promopult/career/?utm_source=pechkin">
+<a href="https://promopult.ru/promopult/career&?utm_source=pechkin">
   <img src=".github/promopult-logo.svg"
        alt="Развиваю «Печкин» при поддержке компании PromoPult"
        width="240"
