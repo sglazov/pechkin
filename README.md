@@ -106,3 +106,5 @@ gulp
 * https://caniuse.email/ ★
 * https://code.market/product/amp-ready-email-template-premium-bundle/
 * 🇷🇺 https://vc.ru/design/75639-kak-pravilno-verstat-pisma-rekomendacii-i-trebovaniya-dlya-verstalshchika
+* https://github.com/wildbit/postmark-templates
+* http://emailclientmarketshare.com/

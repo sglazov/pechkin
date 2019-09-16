@@ -2,6 +2,11 @@
   "name": "pechkin",
   "version": "0.1.0",
   "description": "A template for a quick start email development",
+  "keywords": [
+    "email",
+    "template",
+    "responsive-email"
+  ],
   "author": "Sergey Glazov <github@4enki.ru> (https://github.com/4enki)",
   "license": "MIT",
   "homepage": "https://github.com/4enki/pechkin",
