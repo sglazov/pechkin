@@ -19,9 +19,8 @@
     "email": "github@sglazov.ru"
   },
   "scripts": {
-    "start": "gulp --development",
-    "one": "gulp one",
-    "zip": "gulp zip --production",
+    "start": "cd projects/** && gulp",
+    "dev": "npm run start",
     "yaspeller": "yaspeller projects/**/dist",
     "prod": "gulp build --production"
   },

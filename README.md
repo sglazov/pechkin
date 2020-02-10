@@ -17,17 +17,18 @@ Gulp-сборщик «Печкин» помогает быстро начать 
     git clone https://github.com/sglazov/pechkin.git new-mails && cd $_ && rm -rf ./.git
     ```
 
-1. Перед первым запуском нужно установить зависимости (_быстрее через [Yarn](https://yarnpkg.com); один раз на проект_):
+1. Перед первым запуском нужно установить зависимости:
     ```console
-    npm/yarn install
+    npm i
     ```
 
-1. Перейти в дирректорию [эталонного письма](https://github.com/sglazov/pechkin/tree/master/projects/reference-mail) и запустить сборку с вотчером:
+1. Перейти в дирректорию [эталонного письма](projects/reference-mail) и запустить сборку с вотчером:
     ```console
-    cd projects/reference-mail
+    npm run dev
     ```
+    Или такой вариант:
     ```console
-    gulp
+    cd projects/reference-mail && gulp
     ```
 
 <a href="https://promopult.ru/promopult/career&?utm_source=pechkin">
