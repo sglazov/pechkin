@@ -7,21 +7,22 @@
     "template",
     "responsive-email"
   ],
-  "author": "Sergey Glazov <github@4enki.ru> (https://github.com/4enki)",
+  "author": "Sergey Glazov <github@sglazov.ru> (https://github.com/sglazov)",
   "license": "MIT",
-  "homepage": "https://github.com/4enki/pechkin",
+  "homepage": "https://github.com/sglazov/pechkin",
   "repository": {
     "type": "git",
-    "url": "git@github.com:4enki/pechkin.git"
+    "url": "git@github.com:sglazov/pechkin.git"
   },
   "bugs": {
-    "url": "https://github.com/4enki/pechkin/issues",
-    "email": "github@4enki.ru"
+    "url": "https://github.com/sglazov/pechkin/issues",
+    "email": "github@sglazov.ru"
   },
   "scripts": {
     "start": "gulp --development",
     "one": "gulp one",
     "zip": "gulp zip --production",
+    "yaspeller": "yaspeller projects/**/dist",
     "prod": "gulp build --production"
   },
   "devDependencies": {
@@ -42,6 +43,7 @@
     "nunjucks-markdown": "^2.0.1",
     "portfinder": "^1.0.20",
     "require-dir": "1.2.0",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.0",
+    "yaspeller": "^6.0.2"
   }
 }

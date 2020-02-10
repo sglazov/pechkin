@@ -1,0 +1,13 @@
+{
+  "lang": "ru",
+  "ignoreUrls": true,
+  "checkYo": true,
+  "findRepeatWords": true,
+  "fileExtensions": [
+    ".html",
+    ".php",
+    ".md",
+    ".json",
+    ".txt"
+  ]
+}

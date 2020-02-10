@@ -3,7 +3,7 @@
   Version 0.1.0
 
   Sergey Glazov
-  https://github.com/4enki/pechkin
+  https://github.com/sglazov/pechkin
 */
 const gulp        = require('gulp');
 const runSequence = require('run-sequence');
