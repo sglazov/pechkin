@@ -5,6 +5,7 @@ const frontMatter    = require('gulp-front-matter');
 const markdown       = require('nunjucks-markdown');
 const marked         = require('marked');
 const inlineCss      = require('gulp-inline-css');
+const typograf       = require('gulp-typograf');
 
 const config         = require('../config');
 
@@ -21,6 +22,10 @@ gulp.task('template', function() {
     .pipe(nunjucksRender({
       path:     'src/templates',
       manageEnv: nunjucksMarkdown
+    }))
+    .pipe(typograf({
+      locale: ['ru'],
+      htmlEntity: { type: 'name' }
     }))
     .pipe(inlineCss({
       removeStyleTags: false,
