@@ -39,9 +39,10 @@
     "gulp-typograf": "^4.0.2",
     "gulp-watch": "^5.0.1",
     "imagemin-pngquant": "^9.0.0",
-    "marked": "^0.6.2",
+    "imagemin-pngquant": "^8.0.0",
+    "marked": "^1.1.0",
     "nunjucks-markdown": "^2.0.1",
-    "portfinder": "^1.0.20",
+    "portfinder": "^1.0.26",
     "require-dir": "1.2.0",
     "run-sequence": "^2.2.0",
     "yaspeller": "^6.0.2"
