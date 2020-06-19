@@ -38,6 +38,7 @@
     "gulp-sass-glob": "^1.0.9",
     "gulp-typograf": "^4.0.2",
     "gulp-watch": "^5.0.1",
+    "imagemin-pngquant": "^9.0.0",
     "imagemin-pngquant": "^8.0.0",
     "marked": "^1.1.0",
     "nunjucks-markdown": "^2.0.1",
