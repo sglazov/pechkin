@@ -36,7 +36,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "^1.0.9",
-    "gulp-typograf": "^4.0.2",
+    "gulp-typograf": "^4.0.3",
     "gulp-watch": "^5.0.1",
     "imagemin-pngquant": "^9.0.0",
     "imagemin-pngquant": "^8.0.0",
