@@ -41,7 +41,7 @@
     "imagemin-pngquant": "^8.0.0",
     "marked": "^0.6.2",
     "nunjucks-markdown": "^2.0.1",
-    "portfinder": "^1.0.20",
+    "portfinder": "^1.0.26",
     "require-dir": "1.2.0",
     "run-sequence": "^2.2.0",
     "yaspeller": "^6.0.2"
