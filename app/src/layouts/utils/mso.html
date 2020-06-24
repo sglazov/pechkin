@@ -1,0 +1,12 @@
+{# Microsoft Outlook-хаки для разметки #}
+
+{% macro msoBegin(width) %}
+  {% if not(width) %}
+    {% set width = global.baseWidth %}
+  {% endif %}
+  <!--[if (gte mso 9)|(IE)]><table width="{{ width }}" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+{% endmacro %}
+
+{% macro msoEnd() %}
+  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+{% endmacro %}

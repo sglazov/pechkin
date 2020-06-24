@@ -6,7 +6,7 @@ Gulp-сборщик «Печкин» помогает быстро начать 
 <details>
   <summary>Скрин демо-письма</summary>
   <img
-    src=".github/pechkin-reference-mail-demo.png"
+    src=".github/docs/pechkin-reference-mail-demo.png"
     alt="Скриншот эталонного демо-письма проекта «Печкин» для быстрого старта вёрстки писем"
   >
 </details>
@@ -32,7 +32,7 @@ Gulp-сборщик «Печкин» помогает быстро начать 
     ```
 
 <a href="https://promopult.ru/promopult/career&?utm_source=pechkin">
-  <img src=".github/promopult-logo.svg"
+  <img src=".github/docs/promopult-logo.svg"
        alt="Развиваю «Печкин» при поддержке компании PromoPult"
        width="240"
        height="34">

@@ -1,0 +1,38 @@
+{% from "./mso.html"        import msoBegin, msoEnd %}
+
+{#
+  Входные данные для использования: {{ button('Жмакни кнопку', 'https://go') }}
+
+  text: 'Текст на кнопке'
+  href: 'Урл кнопки
+#}
+{% macro button(name, href) %}
+  {% if type %}
+    {% set button_type= "button_" ~ type %}
+  {% endif %}
+  {% if size %}
+    {% set button_size= "button_" ~ size %}
+  {% endif %}
+
+  {% set button_bg   = "#4353ff" %}
+  {% set button_text = "#fff" %}
+
+  <center class="button-wrapper"><table align="center"><tr>
+    <td class="button-inner" align="center">
+      {{ msoBegin('auto') }}
+      <table border="0" cellpadding="0" cellspacing="0"><tr>
+          <td class="button-box"
+              align="center"
+              bgcolor="{{ button_bg }}">
+            <a class="button"
+               target="_blank"
+               href="{{ href }}"
+               style="color: {{ button_text }}; background-color: {{ button_bg }};">
+              <span style="color: {{ button_text }}">{{ name }}</span>
+            </a>
+          </td>
+        </tr></table>
+      {{ msoEnd() }}
+    </td>
+  </tr></table></center>
+{% endmacro %}

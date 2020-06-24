@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "variables";         /* переменные */
+
+.body,
+body {
+  Margin: 0;
+  padding: 0;
+  min-width: 300px;
+  background-color: $bg-color;
+}
+
+@import "typo";              /* типографика */
+@import "layout";            /* разметка письма */
+@import "buttons";           /* кнопки */
+@import "content";           /* стили контент-блоков */

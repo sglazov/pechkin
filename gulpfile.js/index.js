@@ -1,28 +1,42 @@
-/*
-  Pechkin — A template for a quick start email development
-  Version 0.1.0
+/**
+ * Pechkin — A template for a quick start email development
+ *
+ * Sergey Glazov, sglazov@sglazov.ru
+ * https://github.com/sglazov/pechkin
+ */
 
-  Sergey Glazov
-  https://github.com/sglazov/pechkin
-*/
-const gulp        = require('gulp');
-const runSequence = require('run-sequence');
+const { series, parallel } = require('gulp');
 
-const config      = require('./config')
-
-require('require-dir')('./tasks', {recurse: true});
+const images = require('./tasks/images');
+const scss = require('./tasks/scss');
+const template = require('./tasks/template');
+const watcher = require('./tasks/watch');
+const { serve } = require('./tasks/server');
 
 
-/*---------- Режимы запуска ----------*/
+/**
+ * Базовый gulp-таск
+ *
+ * Собирает шаблоны и откроет в браузере превью собранной папки,
+ * запустит вотчеры на файлы стилей и шаблонов
+ */
+exports.default = series(
+  parallel(
+    scss,
+    template
+  ),
+  images,
+  parallel(
+    serve,
+    watcher
+  )
+);
 
-  // Запуск живой сборки
-  gulp.task('default', function(cb) {
-    return runSequence(
-      'images',
-      'styles',
-      'template',
-      'server',
-      'watch',
-      cb
-    );
-  });
+/**
+ * Одноразово соберёт в итоговую папку минифицированные шаблоны писем
+ */
+exports.build = series(
+  scss,
+  template,
+  images
+);

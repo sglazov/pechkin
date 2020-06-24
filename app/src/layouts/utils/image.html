@@ -1,0 +1,25 @@
+{# Разметка для картинки
+
+Принимает на вход:
+  src: путь к картинке, всешда абсолютный
+  alt: альт-текст
+  caption: описание картинки
+  width: ширина
+  height: высота
+  href: куда ведёт ссылка? если не задано — ссылка = адресу картинки
+#}
+{% macro image(src, alt, caption, width, height, href, center=true) %}
+  <p class="media {% if center %}media_center{% endif %} {% if width == 'full' %}media_full{% endif %}">
+    <a class="media__link"
+       href="{% if href %}{{ href }}{% else %}{{ src }}{% endif %}"
+       target="_blank">
+      <img class="media__picture"
+           src="{{ src }}"
+           alt="{{ alt }}"
+           width="{% if width %}{{ width }}{% endif %}"
+           height="{{ height }}"
+           style="width: 100%; {% if width %}max-width:{{ width }}px;{% endif %}">
+      {% if caption %}<span class="media__caption">{{ caption }}</span>{% endif %}
+    </a>
+  </p>
+{% endmacro %}

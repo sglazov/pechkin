@@ -1,22 +1,25 @@
-const gulp     = require('gulp');
-const imagemin = require('gulp-imagemin');
+/**
+ * Минифицируем графику
+ */
+const { src, dest, lastRun } = require('gulp');
+const _if = require('gulp-if');
+const plumber = require('gulp-plumber');
 const pngquant = require('imagemin-pngquant');
-const plumber  = require('gulp-plumber');
-const changed  = require('gulp-changed');
+const imagemin = require('gulp-imagemin');
 
-const config   = require('../config');
+const config = require('../config');
 
 
-// Копируем и оптимизируем общие изображения
-gulp.task('images', function() {
-  return gulp.src(config.source.images)
-    .pipe(plumber({ errorHandler: config.errorHandler }))
-    .pipe(changed(config.build.images))
+function images() {
+  return src(config.source.images, { since: lastRun(images) })
+    .pipe(plumber({ errorHandler: config.error_handler }))
     .pipe(imagemin({
       optimizationLevel: 3,
       progressive: true,
       interlaced: true,
       use: [pngquant()]
     }))
-    .pipe(gulp.dest(config.build.images));
-});
+    .pipe(dest(config.build.images))
+}
+
+module.exports = images;

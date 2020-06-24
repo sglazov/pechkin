@@ -1,23 +1,21 @@
-const gulp        = require('gulp');
-const watch       = require('gulp-watch');
-const runSequence = require('run-sequence');
-const browserSync = require("browser-sync");
-const reload      = browserSync.reload;
+/**
+ * Федеральная служба по контролю за оборотом файлов
+ */
 
-const config      = require('../config');
+const { watch, series } = require('gulp');
+const { reload } = require('./server');
+
+const images = require('./images');
+const scss = require('./scss');
+const template = require('./template');
+
+const config = require('../config');
 
 
-/*---------- Бдительные вотчеры ----------*/
+function watcher() {
+  watch(config.watch.templates, series(template, reload));
+  watch(config.watch.styles,    series(scss, template, reload));
+  watch(config.watch.images,    series(images, reload));
+}
 
-// Федеральная служба по контролю за оборотом файлов
-gulp.task('watch', function() {
-  watch(config.watch.templates, function() {
-    return runSequence('template', reload);
-  });
-  watch(config.watch.styles, function() {
-    return runSequence('styles', 'template', reload);
-  });
-  watch(config.watch.images, function() {
-    return runSequence('images', reload);
-  });
-});
+module.exports = watcher;

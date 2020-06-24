@@ -1,0 +1,97 @@
+{% import "./parts/globals.html" as glob %}
+
+{% from "./utils/mso.html"        import msoBegin, msoEnd %}
+{% from "./utils/button.html"     import button %}
+{% from "./utils/image.html"      import image %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:v="urn:schemas-microsoft-com:vml"
+      xmlns:o="urn:schemas-microsoft-com:office:office"
+      lang="ru"
+      xml:lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--[if mso | IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+
+    {% if not(disable_mobile) %}<meta name="viewport" content="width=device-width, initial-scale=1.0">{% endif %}
+
+    <title>{{ subject }}</title>
+    <style type="text/css">
+      {% include "./styles/default.css" ignore missing %}
+    </style>
+    {% include "./styles/style.html" ignore missing %}
+
+    <!--[if gte mso 9]><xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+  </head>
+  <body class="body">
+
+    <div class="webkit">
+      {% if preheader %}
+        <p class="preheader">{{ preheader }}</p>
+      {% endif %}
+
+      <table class="layout"
+             align="center"
+             {% if subject %}aria-label="{{ subject }}"{% endif %}
+             border="0"
+             cellpadding="0"
+             cellspacing="0"
+             role="article"
+             width="100%">
+        <tr>
+          <td class="main"
+              align="center">
+            {{ msoBegin(width) }}
+            <table class="wrapper"
+                   align="center"
+                   border="0"
+                   cellpadding="0"
+                   cellspacing="0"
+                   role="presentation"
+                   width="100%">
+              <tr>
+                <td class="email">
+                  <table class="email__wrapper f-fallback"
+                         align="center"
+                         border="0"
+                         cellpadding="0"
+                         cellspacing="0"
+                         role="presentation"
+                         width="100%">
+                    {% include "components/header.html" ignore missing %}
+                    <tr>
+                      <td class="content">
+                        <div class="column">
+                          <table width="100%"><tr>
+                              <td class="cell typography">
+                                {% markdown %}
+                                  {% block content %}
+                                  {% endblock %}
+                                {% endmarkdown %}
+                              </td>
+                            </tr></table>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td><!-- /.content -->
+              </tr>
+              {% include "components/footer.html" %}
+            </table>
+            {{ msoEnd() }}
+          </td>
+        </tr>
+      </table>
+    </div><!-- /.webkit -->
+  </body>
+</html>
