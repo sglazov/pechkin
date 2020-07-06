@@ -108,3 +108,4 @@ npm run start
 * https://github.com/wildbit/postmark-templates
 * http://emailclientmarketshare.com/
 * https://github.com/post/post-email - Builder email using [PostHTML](https://github.com/posthtml/posthtml) & [PostCSS](https://github.com/postcss/postcss)
+* https://howtotarget.email/ — список хаков для задания стилей и разметки для конкретных email-клиентов
