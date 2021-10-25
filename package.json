@@ -46,6 +46,6 @@
     "node-notifier": "^10.0.0",
     "node-sass-glob-importer": "^5.3.2",
     "nunjucks-markdown": "^2.0.1",
-    "yaspeller": "^7.2.0"
+    "yaspeller": "^7.2.1"
   }
 }
