@@ -33,13 +33,6 @@ Gulp-сборщик «Печкин» помогает быстро начать 
     npm run build
     ```
 
-<a href="https://promopult.ru/promopult/career&?utm_source=pechkin">
-  <img src=".github/docs/promopult-logo.svg"
-       alt="Развиваю «Печкин» при поддержке компании PromoPult"
-       width="240"
-       height="34">
-</a>
-
 ## Как всё устроено
 В корне «Печкина» есть директория `mails` в которой находятся отдельные шаблоны для каждого письма.
 
