@@ -5,11 +5,11 @@
 const { watch, series } = require('gulp');
 const { reload } = require('./server');
 
-const images = require('./images');
-const scss = require('./scss');
-const template = require('./template');
+const images = require('./images.js');
+const scss = require('./scss.js');
+const template = require('./template.js');
 
-const config = require('../config');
+const config = require('../config.js');
 
 
 function watcher() {

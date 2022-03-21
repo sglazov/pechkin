@@ -1,7 +1,7 @@
 const browserSync = require('browser-sync');
 const server = browserSync.create();
 
-const config = require('../config');
+const config = require('../config.js');
 
 
 function reload(done) {

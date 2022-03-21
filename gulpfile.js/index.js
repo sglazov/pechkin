@@ -7,11 +7,11 @@
 
 const { series, parallel } = require('gulp');
 
-const images = require('./tasks/images');
-const scss = require('./tasks/scss');
-const template = require('./tasks/template');
-const watcher = require('./tasks/watch');
-const { serve } = require('./tasks/server');
+const images = require('./tasks/images.js');
+const scss = require('./tasks/scss.js');
+const template = require('./tasks/template.js');
+const watcher = require('./tasks/watch.js');
+const { serve } = require('./tasks/server.js');
 
 
 /**

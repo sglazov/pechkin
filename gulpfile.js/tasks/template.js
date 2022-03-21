@@ -14,7 +14,7 @@ const htmlmin = require('gulp-htmlmin');
 const inline_css = require('gulp-inline-css');
 const replace = require('gulp-replace');
 
-const config = require('../config');
+const config = require('../config.js');
 
 
 marked.setOptions({

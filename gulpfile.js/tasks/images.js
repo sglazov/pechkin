@@ -7,7 +7,7 @@ const plumber = require('gulp-plumber');
 const pngquant = require('imagemin-pngquant');
 const imagemin = require('gulp-imagemin');
 
-const config = require('../config');
+const config = require('../config.js');
 
 
 function images() {

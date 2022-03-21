@@ -7,10 +7,11 @@ const _if = require('gulp-if');
 const sass = require('gulp-sass');
 const sass_importer = require('node-sass-glob-importer');
 
-const config = require('../config');
+const config = require('../config.js');
 
 
 const sass_options = {
+  includePaths: ['node_modules'],
   importer: sass_importer(),
   outputStyle: config.env.production ? 'compressed' : 'expanded',
   errLogToConsole: false,
